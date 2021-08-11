@@ -30,8 +30,8 @@ namespace Database_Final_Exam_Rehearsal
 
         private void menuStripItemIntroduction_Click(object sender, EventArgs e)
         {
-            Test testForm = new Test();
-            openChildForm(testForm);
+            formIntroduction newForm = new formIntroduction();
+            openChildForm(newForm);
         }
 
         Form activeForm = null;
@@ -50,7 +50,13 @@ namespace Database_Final_Exam_Rehearsal
       
         private void menuStripItemMusic_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            textBox1.Text = e.ClickedItem.Text;
+            string[] origins = new string[3] { "ba", "ca", "da" };
+            ToolStripMenuItem toolStripMenuItem = (ToolStripMenuItem)e.ClickedItem;
+            foreach (var origin in origins)
+            {
+                ToolStripItem subItem = new ToolStripMenuItem(origin);
+                toolStripMenuItem.DropDownItems.Add(subItem);
+            }
         }
     }
 }
