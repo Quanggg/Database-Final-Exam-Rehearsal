@@ -15,7 +15,7 @@ namespace Database_Final_Exam_Rehearsal
         public MainForm()
         {
             InitializeComponent();
-            initDataForMusicMenu();
+            initDataForMusicMenu();            
         }
 
         private void initDataForMusicMenu()
