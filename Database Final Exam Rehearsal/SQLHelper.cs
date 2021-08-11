@@ -8,5 +8,6 @@ namespace Database_Final_Exam_Rehearsal
 {
     class SQLHelper
     {
+        
     }
 }
