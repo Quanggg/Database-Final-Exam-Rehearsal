@@ -12,10 +12,12 @@ namespace Database_Final_Exam_Rehearsal
 {
     public partial class MainForm : Form
     {
+        SQLHelper sqlHelper;
         public MainForm()
         {
             InitializeComponent();
-            initDataForMusicMenu();            
+            initDataForMusicMenu();
+            sqlHelper = new SQLHelper();
         }
 
         private void initDataForMusicMenu()
@@ -43,20 +45,15 @@ namespace Database_Final_Exam_Rehearsal
             childForm.Dock = DockStyle.Fill;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.TopLevel = false;
-            panelMain.Controls.Clear();
-            panelMain.Controls.Add(childForm);
             childForm.Show();
         }
       
         private void menuStripItemMusic_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            string[] origins = new string[3] { "ba", "ca", "da" };
-            ToolStripMenuItem toolStripMenuItem = (ToolStripMenuItem)e.ClickedItem;
-            foreach (var origin in origins)
-            {
-                ToolStripItem subItem = new ToolStripMenuItem(origin);
-                toolStripMenuItem.DropDownItems.Add(subItem);
-            }
+            DataSet dataSet = new DataSet();
+            sqlHelper.getMusicOrigin(dataSet);
+
+            dataGridView1.DataSource = dataSet.Tables[0];
         }
     }
 }

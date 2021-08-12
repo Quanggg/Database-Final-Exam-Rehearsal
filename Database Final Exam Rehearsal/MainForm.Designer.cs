@@ -31,11 +31,12 @@ namespace Database_Final_Exam_Rehearsal
         {
             this.menuStripMainForm = new System.Windows.Forms.MenuStrip();
             this.menuStripItemIntroduction = new System.Windows.Forms.ToolStripMenuItem();
-            this.panelMain = new System.Windows.Forms.Panel();
             this.menuStripItemMusic = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.menuStripMainForm.SuspendLayout();
-            this.panelMain.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStripMainForm
@@ -56,16 +57,6 @@ namespace Database_Final_Exam_Rehearsal
             this.menuStripItemIntroduction.Text = "Introduction";
             this.menuStripItemIntroduction.Click += new System.EventHandler(this.menuStripItemIntroduction_Click);
             // 
-            // panelMain
-            // 
-            this.panelMain.Controls.Add(this.textBox1);
-            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(0, 24);
-            this.panelMain.Margin = new System.Windows.Forms.Padding(20);
-            this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(984, 536);
-            this.panelMain.TabIndex = 1;
-            // 
             // menuStripItemMusic
             // 
             this.menuStripItemMusic.CheckOnClick = true;
@@ -74,28 +65,40 @@ namespace Database_Final_Exam_Rehearsal
             this.menuStripItemMusic.Text = "Music";
             this.menuStripItemMusic.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStripItemMusic_DropDownItemClicked);
             // 
-            // textBox1
+            // panel1
             // 
-            this.textBox1.Location = new System.Drawing.Point(339, 178);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 24);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(984, 536);
+            this.panel1.TabIndex = 1;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(984, 536);
+            this.dataGridView1.TabIndex = 0;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(984, 560);
-            this.Controls.Add(this.panelMain);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStripMainForm);
             this.MainMenuStrip = this.menuStripMainForm;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rehearsal_CS486_Team14";
             this.menuStripMainForm.ResumeLayout(false);
             this.menuStripMainForm.PerformLayout();
-            this.panelMain.ResumeLayout(false);
-            this.panelMain.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,8 +109,8 @@ namespace Database_Final_Exam_Rehearsal
         private System.Windows.Forms.MenuStrip menuStripMainForm;
         private System.Windows.Forms.ToolStripMenuItem menuStripItemIntroduction;
         private System.Windows.Forms.ToolStripMenuItem menuStripItemMusic;
-        private System.Windows.Forms.Panel panelMain;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
