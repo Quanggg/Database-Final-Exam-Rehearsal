@@ -50,7 +50,7 @@ namespace Database_Final_Exam_Rehearsal
             {
                 MessageBox.Show("Cannot connect to database. Please try again!", "Error1", MessageBoxButtons.OK);
             }
-            connecting = false;
+            connecting = false;            
         }
     }
 }

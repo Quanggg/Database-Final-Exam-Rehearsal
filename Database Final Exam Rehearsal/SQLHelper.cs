@@ -18,10 +18,10 @@ namespace Database_Final_Exam_Rehearsal
         //SqlConnection sqlConnection = new SqlConnection(connectionString);
         public SQLHelper()
         {            
-            connection.ConnectionString = connectionString;
-            command.Connection = connection;
             Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
             connectionString = config.ConnectionStrings.ConnectionStrings["Quang"].ConnectionString;
+            connection.ConnectionString = connectionString;
+            command.Connection = connection;
             Console.WriteLine(config.ConnectionStrings.ConnectionStrings["Quang"].ConnectionString);
             Console.WriteLine(ConfigurationManager.ConnectionStrings["Quang"].ConnectionString);
             config.Save(ConfigurationSaveMode.Modified);
