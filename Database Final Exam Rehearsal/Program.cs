@@ -21,7 +21,7 @@ namespace Database_Final_Exam_Rehearsal
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             connectStr form = new connectStr();
-            Application.Run(new MainForm());
+            Application.Run(new Form2());
             
         }     
         [System.Runtime.InteropServices.DllImport("user32.dll")]

@@ -11,3 +11,5 @@ C:\Users\quang\source\repos\Database Final Exam Rehearsal\Database Final Exam Re
 C:\Users\quang\source\repos\Database Final Exam Rehearsal\Database Final Exam Rehearsal\bin\Debug\Database Final Exam Rehearsal.pdb
 C:\Users\quang\source\repos\Database Final Exam Rehearsal\Database Final Exam Rehearsal\obj\Debug\Database Final Exam Rehearsal.exe
 C:\Users\quang\source\repos\Database Final Exam Rehearsal\Database Final Exam Rehearsal\obj\Debug\Database Final Exam Rehearsal.pdb
+C:\Users\quang\source\repos\Database Final Exam Rehearsal\Database Final Exam Rehearsal\obj\Debug\Database_Final_Exam_Rehearsal.Form1.resources
+C:\Users\quang\source\repos\Database Final Exam Rehearsal\Database Final Exam Rehearsal\obj\Debug\Database_Final_Exam_Rehearsal.Form2.resources
