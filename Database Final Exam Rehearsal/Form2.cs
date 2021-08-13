@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +16,7 @@ namespace Database_Final_Exam_Rehearsal
         public Form2()
         {
             InitializeComponent();
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 0; i++)
             {
                 Panel panel = new Panel();
                 Button btn = new Button();

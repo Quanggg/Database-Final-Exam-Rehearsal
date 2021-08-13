@@ -35,16 +35,16 @@ namespace Database_Final_Exam_Rehearsal
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(335, 186);
+            this.textBox1.Location = new System.Drawing.Point(185, 118);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(485, 301);
+            this.button1.Location = new System.Drawing.Point(313, 195);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 42);
             this.button1.TabIndex = 1;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -54,7 +54,7 @@ namespace Database_Final_Exam_Rehearsal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(466, 288);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Name = "connectStr";
